@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <!-- <link rel="icon" href="/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>JoseArroyoDev - Portfolio</title>
+    <style type="text/tailwindcss">
+      .grid-bg {
+        background-size: 40px 40px;
+        background-image: radial-gradient(
+          circle,
+          #e5e7eb 1.5px,
+          transparent 1.5px
+        );
+      }
+
+      .dark .grid-bg {
+        background-size: 50px 50px;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px
+          );
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark grid-bg transition-colors duration-300"
+  >
+    <main class="min-h-screen">
+      <slot />
+    </main>
+  </body>
+</html>
