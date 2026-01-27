@@ -1,7 +1,7 @@
-import js from "@eslint/js";
-import eslintPluginAstro from "eslint-plugin-astro";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+import js from '@eslint/js';
+import eslintPluginAstro from 'eslint-plugin-astro';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 export default [
   js.configs.recommended,
@@ -9,10 +9,10 @@ export default [
   ...eslintPluginAstro.configs.recommended,
 
   {
-    files: ["**/*.{js,mjs,cjs,ts,tsx}"],
+    files: ['**/*.{js,mjs,cjs,ts,tsx}'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: {
         ...globals.browser,
         ...globals.node,
@@ -20,17 +20,17 @@ export default [
       },
       parser: tseslint.parser,
       parserOptions: {
-        project: "./tsconfig.json",
+        project: './tsconfig.json',
       },
     },
     rules: {
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "warn",
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   },
 
   {
-    files: ["**/*.astro"],
+    files: ['**/*.astro'],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -38,19 +38,19 @@ export default [
       },
     },
     rules: {
-      "@typescript-eslint/no-unused-vars": "warn",
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   },
 
   {
     ignores: [
-      "dist/",
-      "node_modules/",
-      ".astro/",
-      "build/",
-      ".env",
-      ".env.*",
-      "!.env.example",
+      'dist/',
+      'node_modules/',
+      '.astro/',
+      'build/',
+      '.env',
+      '.env.*',
+      '!.env.example',
     ],
   },
 ];
