@@ -8,6 +8,10 @@
   --color-accent-cyan: #00BFFF;
 }
 
+body {
+  font-family: "Onest", sans-serif;
+}
+
 @layer utilities {
   @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
@@ -28,6 +32,15 @@
     from { opacity: 0;transform: translateY(-40px); }
     to { opacity: 1; transform: translateY(0); }
   }
+  
+  @keyframes slide-in-bottom-fade {
+    from { opacity: 0;transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .story-script-font {
+    font-family: "Story Script", "Onest", sans-serif;
+  }
 
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out both;
@@ -41,8 +54,16 @@
     animation: slide-in-right-fade 0.7s ease-out forwards;
   }
 
-  .slide-in-top-fade {
+  .animate-in-top-fade {
     animation: slide-in-top-fade 0.7s ease-out forwards;
+  }
+  
+  .animate-in-bottom-fade {
+    animation: slide-in-bottom-fade 0.7s ease-out forwards;
+  }
+
+  .slide-delay-150 {
+    animation-delay: 0.15s;
   }
 
   .slide-delay-200 {
