@@ -45,11 +45,11 @@
     animation: slide-in-top-fade 0.7s ease-out forwards;
   }
 
-  .delay-150 {
-    animation-delay: 0.15s;
+  .slide-delay-200 {
+    animation-delay: 0.2s;
   }
 
-  .delay-200 {
-    animation-delay: 0.2s;
+  .slide-delay-400 {
+    animation-delay: 0.4s;
   }
 }
