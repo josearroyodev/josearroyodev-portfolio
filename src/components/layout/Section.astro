@@ -1,25 +1,29 @@
 ---
 interface Props {
   id: string;
-  title: string;
+  title?: string;
   extra?: string;
 }
 
 const { id, title, extra } = Astro.props;
 ---
 
-<section class="mb-32 flex w-[95%] max-w-5xl flex-col items-start" id={id}>
-  <header class="mb-12 flex w-full items-center gap-4">
-    <slot name="icon" />
-    <h2 class="text-3xl font-thin"><em>{title}</em></h2>
-    {
-      extra && (
-        <>
-          <hr class="h-px flex-1 border-none bg-zinc-100/30" />
-          <span class="font-thin text-slate-100/40">{extra}</span>
-        </>
-      )
-    }
-  </header>
+<section id={id} class=`mb-12 w-[95%] max-w-5xl flex-col items-start pt-32`>
+  {
+    title && (
+      <header class="mb-12 flex w-full items-center gap-4">
+        <slot name="icon" />
+        <h2 class="text-3xl font-thin">
+          <em>{title}</em>
+        </h2>
+        {extra && (
+          <>
+            <hr class="h-px flex-1 border-none bg-zinc-100/30" />
+            <span class="font-thin text-slate-100/40">{extra}</span>
+          </>
+        )}
+      </header>
+    )
+  }
   <slot />
 </section>
