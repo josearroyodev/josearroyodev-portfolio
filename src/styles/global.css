@@ -62,15 +62,11 @@ body {
     animation: slide-in-bottom-fade 0.7s ease-out forwards;
   }
 
-  .slide-delay-150 {
-    animation-delay: 0.15s;
-  }
-
   .slide-delay-200 {
     animation-delay: 0.2s;
   }
 
-  .slide-delay-400 {
-    animation-delay: 0.4s;
+  .slide-delay-300 {
+    animation-delay: 0.3s;
   }
 }
