@@ -1,5 +1,6 @@
 ---
 import Hero from '@components/Hero.astro';
+import Section from '@components/layout/Section.astro';
 import Stack from '@components/Stack.astro';
 import DefaultLayout from '@layouts/DefaultLayout.astro';
 ---
@@ -7,4 +8,43 @@ import DefaultLayout from '@layouts/DefaultLayout.astro';
 <DefaultLayout>
   <Hero />
   <Stack />
+  <Section title="My best projects" extra="02/05" />
+  <Section title="My experience">
+    <svg
+      class="text-accent-cyan/70"
+      slot="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-code"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+        d="M14 4l-4 16"></path>
+    </svg>
+  </Section>
+  <Section title="My education">
+    <svg
+      class="text-accent-cyan/70"
+      slot="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-book-2"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12"></path><path
+        d="M19 16h-12a2 2 0 0 0 -2 2"></path><path d="M9 8h6"></path>
+    </svg>
+  </Section>
 </DefaultLayout>

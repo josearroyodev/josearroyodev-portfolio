@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  extra?: string;
+}
+
+const { title, extra } = Astro.props;
+---
+
+<section
+  class="my-16 flex w-[95%] max-w-5xl flex-col items-start"
+  id="projects"
+>
+  <header class="flex w-full items-center gap-4">
+    <slot name="icon" />
+    <h2 class="text-3xl font-thin"><em>{title}</em></h2>
+    {
+      extra && (
+        <>
+          <hr class="h-px flex-1 border-none bg-zinc-100/30" />
+          <span class="font-thin text-slate-100/40">{extra}</span>
+        </>
+      )
+    }
+  </header>
+  <slot name="content" />
+</section>
