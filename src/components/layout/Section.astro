@@ -8,10 +8,10 @@ const { title, extra } = Astro.props;
 ---
 
 <section
-  class="my-16 flex w-[95%] max-w-5xl flex-col items-start"
+  class="mb-32 flex w-[95%] max-w-5xl flex-col items-start"
   id="projects"
 >
-  <header class="flex w-full items-center gap-4">
+  <header class="mb-12 flex w-full items-center gap-4">
     <slot name="icon" />
     <h2 class="text-3xl font-thin"><em>{title}</em></h2>
     {
@@ -23,5 +23,5 @@ const { title, extra } = Astro.props;
       )
     }
   </header>
-  <slot name="content" />
+  <slot />
 </section>
