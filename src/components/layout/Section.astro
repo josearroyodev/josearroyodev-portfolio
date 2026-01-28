@@ -1,16 +1,14 @@
 ---
 interface Props {
+  id: string;
   title: string;
   extra?: string;
 }
 
-const { title, extra } = Astro.props;
+const { id, title, extra } = Astro.props;
 ---
 
-<section
-  class="mb-32 flex w-[95%] max-w-5xl flex-col items-start"
-  id="projects"
->
+<section class="mb-32 flex w-[95%] max-w-5xl flex-col items-start" id={id}>
   <header class="mb-12 flex w-full items-center gap-4">
     <slot name="icon" />
     <h2 class="text-3xl font-thin"><em>{title}</em></h2>
