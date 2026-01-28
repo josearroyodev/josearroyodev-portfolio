@@ -99,4 +99,15 @@ body {
   .slide-delay-300 {
     animation-delay: 0.3s;
   }
+
+  @media (min-width: 1024px) {
+    .imageCard {
+      transform: perspective(800px) rotateY(15deg) rotateX(5deg);
+      transition: transform 0.3s ease;
+    }
+  
+    .imageCard:hover {
+      transform: perspective(800px) rotateY(0) rotateX(0);
+    }
+  }
 }
