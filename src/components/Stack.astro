@@ -2,9 +2,8 @@
 import TechIcon from './tech/TechIcon.astro';
 ---
 
-<section
-  id="stack"
-  class="w-[95%] max-w-7xl rounded-[2.5rem] border border-white/5 bg-zinc-900 py-12 text-center"
+<div
+  class="w-[95%] max-w-7xl rounded-[2.5rem] border border-white/5 bg-zinc-900 py-16 text-center"
 >
   <header>
     <h3
@@ -13,7 +12,9 @@ import TechIcon from './tech/TechIcon.astro';
       My Favourite Stack
     </h3>
   </header>
-  <article class="mt-8 flex w-full flex-wrap justify-center gap-12">
+  <article
+    class="mt-8 flex w-full flex-wrap justify-center gap-x-20 gap-y-10 px-16 lg:gap-0"
+  >
     <TechIcon name="Next.js" hoverColor="#B8B8B8">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -204,4 +205,4 @@ import TechIcon from './tech/TechIcon.astro';
       </svg>
     </TechIcon>
   </article>
-</section>
+</div>

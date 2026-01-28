@@ -1,50 +1,110 @@
 ---
 import Hero from '@components/Hero.astro';
 import Section from '@components/layout/Section.astro';
+import Timeline from '@components/layout/Timeline.astro';
 import Stack from '@components/Stack.astro';
 import DefaultLayout from '@layouts/DefaultLayout.astro';
 ---
 
 <DefaultLayout>
-  <Hero />
-  <Stack />
-  <Section title="My best projects" extra="02/05" />
-  <Section title="My experience">
-    <svg
-      class="text-accent-cyan/70"
-      slot="icon"
-      xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-code"
-      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-        d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
-        d="M14 4l-4 16"></path>
-    </svg>
+  <Section id="hero">
+    <Hero slot="content" />
   </Section>
-  <Section title="My education">
-    <svg
-      class="text-accent-cyan/70"
-      slot="icon"
-      xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-book-2"
-      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-        d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12"></path><path
-        d="M19 16h-12a2 2 0 0 0 -2 2"></path><path d="M9 8h6"></path>
-    </svg>
+  <Section id="stack">
+    <Stack slot="content" />
   </Section>
+  <Section id="projects" title="My best projects" extra="02/05" />
+  <div class="flex w-full max-w-5xl flex-col gap-10 md:flex-row md:gap-20">
+    <Section id="experience" title="My experience">
+      <svg
+        class="text-accent-cyan/70"
+        slot="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-code"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+          d="M14 4l-4 16"></path>
+      </svg>
+      <article class="flex-1" slot="content">
+        <Timeline
+          active
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+      </article>
+    </Section>
+    <Section id="education" title="My education">
+      <svg
+        class="text-accent-cyan/70"
+        slot="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-book-2"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12"></path><path
+          d="M19 16h-12a2 2 0 0 0 -2 2"></path><path d="M9 8h6"></path>
+      </svg>
+      <article class="flex-1" slot="content">
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+        <Timeline
+          dates="2021 — PRESENT"
+          title="Senior Software Architect"
+          subtitle="CloudScale Systems"
+          content="Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+        />
+      </article>
+    </Section>
+  </div>
 </DefaultLayout>
