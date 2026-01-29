@@ -49,6 +49,18 @@ import '../styles/global.css';
           );
       }
     </style>
+    <script>
+      const logoBtn = document.getElementById('logo-button');
+
+      if (logoBtn) {
+        logoBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          window.scrollTo({ top: 0 });
+          window.history.pushState({}, '', window.location.pathname);
+        });
+      }
+    </script>
   </head>
   <body
     class="bg-background-light dark:bg-background-dark grid-bg text-slate-800 transition-colors duration-300 dark:text-slate-100"
