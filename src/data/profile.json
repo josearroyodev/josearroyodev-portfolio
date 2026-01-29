@@ -1,12 +1,20 @@
 {
-  "name": "Jose Arroyo",
-  "title": "Senior Full-Stack Web Developer",
-  "email": "jose@josearroyo.dev",
-  "phone": "+34 657 67 35 82",
-  "bio": "",
-  "social": {
-    "github": "",
-    "linkedin": "",
-    "twitter": ""
-  }
+  "brandName": "JoseArroyo.dev",
+  "alias": "Jose Arroyo Dev",
+  "navBar": {
+    "links": [
+      { "label": "stack", "path": "#stack" },
+      { "label": "projects", "path": "#projects" },
+      { "label": "experience & education", "path": "#experience" },
+      { "label": "about", "path": "#about" }
+    ]
+  },
+  "social": [
+    { "platform": "GitHub", "url": "https://github.com/josearroyodev" },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/josearroyoescudero/"
+    },
+    { "platform": "Twitter", "url": "#" }
+  ]
 }

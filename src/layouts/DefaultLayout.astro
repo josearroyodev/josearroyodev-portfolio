@@ -2,6 +2,7 @@
 import Footer from '@components/Footer.astro';
 import Navbar from '@components/Navbar.astro';
 import '../styles/global.css';
+import data from '@data/profile.json';
 ---
 
 <html lang="en" class="dark scroll-smooth">
@@ -65,12 +66,12 @@ import '../styles/global.css';
   <body
     class="bg-background-light dark:bg-background-dark grid-bg text-slate-800 transition-colors duration-300 dark:text-slate-100"
   >
-    <Navbar />
+    <Navbar brandName={data.brandName} links={data.navBar.links} />
 
     <main class="flex min-h-screen flex-col items-center">
       <slot />
     </main>
 
-    <Footer />
+    <Footer alias={data.alias} social={data.social} />
   </body>
 </html>
