@@ -4,5 +4,117 @@
 
 @theme {
   --color-background-dark: #171717;
-  --color-background-light: #FFFFFC;
+  --color-background-light: #fffffc;
+  --color-accent-cyan: #00bfff;
+}
+
+body {
+  font-family: 'Onest', sans-serif;
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-in-left-fade {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slide-in-right-fade {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-top-fade {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-bottom-fade {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .story-script-font {
+    font-family: 'Story Script', 'Onest', sans-serif;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out both;
+  }
+
+  .animate-left-fade {
+    animation: slide-in-left-fade 0.7s ease-out forwards;
+  }
+
+  .animate-right-fade {
+    animation: slide-in-right-fade 0.7s ease-out forwards;
+  }
+
+  .animate-in-top-fade {
+    animation: slide-in-top-fade 0.7s ease-out forwards;
+  }
+
+  .animate-in-bottom-fade {
+    animation: slide-in-bottom-fade 0.7s ease-out forwards;
+  }
+
+  .slide-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .slide-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .projectCard:hover {
+    box-shadow: 
+      0 0 40px rgba(0, 191, 255, 0.15),
+      0 0 80px rgba(0, 191, 255, 0.08),
+      0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (min-width: 1024px) {
+    .imageCard {
+      transform: perspective(800px) rotateY(15deg) rotateX(5deg);
+      transition: transform 0.3s ease;
+    }
+  
+    .imageCard:hover {
+      transform: perspective(800px) rotateY(0) rotateX(0);
+    }
+  }
 }

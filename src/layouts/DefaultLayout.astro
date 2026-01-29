@@ -1,4 +1,6 @@
 ---
+import Footer from '@components/Footer.astro';
+import Navbar from '@components/Navbar.astro';
 import '../styles/global.css';
 ---
 
@@ -10,6 +12,18 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>JoseArroyoDev - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
     <style type="text/tailwindcss">
       .grid-bg {
         background-size: 40px 40px;
@@ -37,10 +51,14 @@ import '../styles/global.css';
     </style>
   </head>
   <body
-    class="bg-background-light dark:bg-background-dark grid-bg transition-colors duration-300"
+    class="bg-background-light dark:bg-background-dark grid-bg text-slate-800 transition-colors duration-300 dark:text-slate-100"
   >
-    <main class="min-h-screen">
+    <Navbar />
+
+    <main class="flex min-h-screen flex-col items-center">
       <slot />
     </main>
+
+    <Footer />
   </body>
 </html>
