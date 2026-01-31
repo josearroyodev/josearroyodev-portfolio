@@ -4,12 +4,22 @@
 
 @theme {
   --color-background-dark: #171717;
-  --color-background-light: #fffffc;
+  --color-background-light: #F3F3F3;
   --color-accent-cyan: #00bfff;
 }
 
 body {
   font-family: 'Onest', sans-serif;
+}
+
+@layer base {
+  .icon-stroke {
+    stroke-width: 2;
+  }
+  
+  .dark .icon-stroke {
+    stroke-width: 1;
+  }
 }
 
 @layer utilities {

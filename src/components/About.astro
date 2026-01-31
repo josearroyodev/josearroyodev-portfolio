@@ -12,10 +12,10 @@ const { name, surname, paragraphs } = Astro.props;
     </h3>
     {paragraphs.map((p) => <p>{p}</p>)}
   </div>
-  <div class="dark:bg-accent-cyan/30 imageCard rounded-3xl bg-zinc-600/30">
+  <div class="bg-accent-cyan/30 imageCard rounded-3xl">
     <img
       src="images/josearroyodev.webp"
-      class="hover: dark:normal rounded-3xl border-4 border-zinc-800 object-cover shadow-2xl grayscale dark:grayscale-0"
+      class="dark:normal rounded-3xl border-4 object-cover shadow-2xl grayscale dark:border-zinc-800 dark:grayscale-0"
     />
   </div>
 </article>

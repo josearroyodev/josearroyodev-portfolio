@@ -3,7 +3,7 @@ const { projectDetails } = Astro.props;
 ---
 
 <div
-  class="projectCard mb-6 max-w-100 overflow-hidden rounded-4xl bg-zinc-900 transition-all duration-300 hover:scale-[102%]"
+  class="projectCard hover:border-accent-cyan mb-6 max-w-100 overflow-hidden rounded-4xl border-2 border-transparent bg-zinc-900 transition-all hover:scale-[102%]"
 >
   <div class="aspect-video overflow-hidden bg-zinc-800">
     <img
@@ -13,7 +13,7 @@ const { projectDetails } = Astro.props;
     />
   </div>
   <div class="p-8">
-    <div class="mb-6 flex flex-wrap gap-2">
+    <div class="mb-6 flex flex-wrap gap-2 text-zinc-500">
       {
         projectDetails.technologies.map((techlonogy: string) => (
           <span class="tech-tag">[{techlonogy}]</span>

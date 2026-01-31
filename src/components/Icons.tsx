@@ -225,7 +225,7 @@ export const Icons = {
   ),
   Experience: () => (
     <svg
-      className="text-accent-cyan/70 group-hover/title:text-accent-cyan icon icon-tabler icons-tabler-outline transition-all duration-300 group-hover:drop-shadow-[0_0_8px_currentColor]"
+      className="icon-stroke text-accent-cyan/70 group-hover/title:text-accent-cyan icon icon-tabler icons-tabler-outline transition-all duration-300 group-hover:drop-shadow-[0_0_8px_currentColor]"
       slot="icon"
       xmlns="http://www.w3.org/2000/svg"
       width="36"
@@ -245,7 +245,7 @@ export const Icons = {
   ),
   Education: () => (
     <svg
-      className="text-accent-cyan/70 group-hover/title:text-accent-cyan icon icon-tabler icons-tabler-outline transition-all duration-300 group-hover:drop-shadow-[0_0_8px_currentColor]"
+      className="icon-stroke text-accent-cyan/70 group-hover/title:text-accent-cyan icon icon-tabler icons-tabler-outline transition-all duration-300 group-hover:drop-shadow-[0_0_8px_currentColor]"
       slot="icon"
       xmlns="http://www.w3.org/2000/svg"
       width="36"
