@@ -4,14 +4,15 @@ interface Props {
   title?: string;
   extra?: string;
   isGroup?: boolean;
+  classes?: string;
 }
 
-const { id, title, extra, isGroup = false } = Astro.props;
+const { id, title, extra, isGroup = false, classes } = Astro.props;
 ---
 
 <section
   id={id}
-  class=`${isGroup ? 'group/title' : ''} mt-32 flex w-full scroll-mt-32 flex-col items-center`
+  class=`${isGroup ? 'group/title' : ''} mt-32 flex w-full scroll-mt-32 flex-col items-center ${classes}`
 >
   {
     title && (

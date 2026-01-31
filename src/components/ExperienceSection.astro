@@ -14,7 +14,12 @@ type Experience = {
 const { experiences } = Astro.props;
 ---
 
-<Section id="experience" title="My experience" isGroup>
+<Section
+  id="experience"
+  title="My experience"
+  isGroup
+  classes="transition-all animate-left-fade"
+>
   <Icons.Experience slot="icon" />
   <article class="flex w-full flex-col" slot="content">
     {
