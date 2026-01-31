@@ -19,11 +19,11 @@ const { active = false, dates, title, subtitle, content } = Astro.props;
         <div class="relative pl-12">
           {
             active ? (
-              <div class="bg-background-dark border-accent-cyan absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border-2 shadow-[0_0_15px_rgba(79,209,197,0.3)]">
+              <div class="bg-background-light dark:bg-background-dark border-accent-cyan absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border-2 shadow-[0_0_15px_rgba(79,209,197,0.3)]">
                 <div class="bg-accent-cyan h-3 w-3 animate-pulse rounded-full" />
               </div>
             ) : (
-              <div class="bg-background-dark absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border-2 border-zinc-800" />
+              <div class="bg-background-light dark:bg-background-dark absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border dark:border-2 dark:border-zinc-800" />
             )
           }
 
@@ -33,7 +33,7 @@ const { active = false, dates, title, subtitle, content } = Astro.props;
             {dates}
           </span>
           <h4
-            class="group-hover:text-accent-cyan/70 mb-1 text-xl text-white transition-all duration-300 group-hover:font-bold"
+            class="group-hover:text-accent-cyan dark:group-hover:text-accent-cyan/70 mb-1 text-xl transition-all duration-300 group-hover:font-bold dark:text-white"
           >
             {title}
           </h4>
