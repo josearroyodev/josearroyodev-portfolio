@@ -31,8 +31,21 @@
     "ctas": [
       {
         "label": "Let’s talk",
-        "icon": "sendMail",
-        "url": "mailto:josearroyoescudero@gmail.com"
+        "icon": "sendmail",
+        "href": "mailto:josearroyoescudero@gmail.com",
+        "type": "button"
+      },
+      {
+        "label": "Connect",
+        "icon": "connect",
+        "href": "https://www.linkedin.com/in/josearroyoescudero/",
+        "type": "link"
+      },
+      {
+        "label": "Download CV",
+        "icon": "downloadCV",
+        "href": "",
+        "type": "link"
       }
     ],
     "summary": {
@@ -63,14 +76,6 @@
           "en": "Stack"
         },
         "path": "#stack"
-      },
-      {
-        "id": "projects",
-        "label": {
-          "es": "Proyectos",
-          "en": "Projects"
-        },
-        "path": "#projects"
       },
       {
         "id": "experience",
@@ -173,15 +178,7 @@
       "content": "Estudios superiores en fundamentos de programación, bases de datos y desarrollo de sistemas."
     }
   ],
-  "projects": [
-    {
-      "technologies": ["React", "Next.js", "Azure DevOps", "Jest"],
-      "title": "Inveert Smart Planning Platform",
-      "details": "Optimización y desarrollo de interfaces financieras de alta fidelidad con enfoque en accesibilidad y rendimiento.",
-      "demo": "https://github.com/josearroyodev",
-      "code": "https://github.com/josearroyodev"
-    }
-  ],
+  "projects": [],
   "errors": {
     "noProjects": {
       "es": "No se han encontrado proyectos",

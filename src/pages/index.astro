@@ -37,18 +37,25 @@ const currentLang = 'en';
       jobStatus={basics.jobStatus}
       role={basics.role}
       headline={basics.headline}
+      ctas={basics.ctas}
     />
   </Section>
   <Section id="stack">
     <Stack slot="content" lang={currentLang} title={stack.title} />
   </Section>
-  <Section id="projects" title="My best projects" extra="02/05">
-    <ProjectsContainer
-      slot="content"
-      projects={projects}
-      projectsError={errors.noProjects[currentLang]}
-    />
-  </Section>
+
+  {
+    projects && projects.length > 0 && (
+      <Section id="projects" title="My best projects" extra="02/05">
+        <ProjectsContainer
+          slot="content"
+          projects={projects}
+          projectsError={errors.noProjects[currentLang]}
+        />
+      </Section>
+    )
+  }
+
   <div class="flex w-full max-w-5xl flex-col gap-10 md:flex-row md:gap-60">
     <ExperienceSection experiences={experiences} />
     <EducationSection education={education} />
