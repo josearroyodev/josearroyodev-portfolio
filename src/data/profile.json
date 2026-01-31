@@ -24,28 +24,27 @@
         "subtitleHighlight": "Product Builder"
       }
     },
-    "label": ["Senior Full-Stack", "Web Developer", "Product Builder"],
     "headline": {
-      "es": "Aquí iría tu bio corta para el SEO o el Hero section.",
-      "en": "Specializing in high-performance distributed systems, scalable cloud infrastructure, and enterprise-grade architecture."
+      "es": "Desarrollador Full Stack con más de 10 años de experiencia, especializado en React y Java.",
+      "en": "Full Stack Developer with over 10 years of experience, specializing in React and Java."
     },
     "ctas": [
       {
         "label": "Let’s talk",
         "icon": "sendMail",
-        "url": ""
+        "url": "mailto:josearroyoescudero@gmail.com"
       }
     ],
     "summary": {
       "es": [
-        "Soy desarrollador web enfocado en crear aplicaciones claras, eficientes y centradas en el usuario. Me gusta construir productos digitales con código limpio, buen diseño y una experiencia de uso sencilla, donde cada detalle tenga sentido.",
-        "Trabajo principalmente con tecnologías modernas del ecosistema web y disfruto enfrentándome a problemas reales: desde estructurar una interfaz hasta optimizar la lógica que hay detrás. Me interesa especialmente que lo que desarrollo no solo funcione, sino que sea mantenible y fácil de escalar.",
-        "Más allá del código, valoro la disciplina, la mejora continua y el aprendizaje constante. Me implico en cada proyecto con mentalidad de producto, buscando siempre aportar soluciones útiles y bien pensadas."
+        "Experto en desarrollo web frontend con React, Next.js y manejo de estados con Redux.",
+        "Amplia experiencia en backend con Java, Springboot y microservicios RESTful.",
+        "Especializado en el sector bancario, garantizando seguridad, accesibilidad y rendimiento."
       ],
       "en": [
-        "Soy desarrollador web enfocado en crear aplicaciones claras, eficientes y centradas en el usuario. Me gusta construir productos digitales con código limpio, buen diseño y una experiencia de uso sencilla, donde cada detalle tenga sentido.",
-        "Trabajo principalmente con tecnologías modernas del ecosistema web y disfruto enfrentándome a problemas reales: desde estructurar una interfaz hasta optimizar la lógica que hay detrás. Me interesa especialmente que lo que desarrollo no solo funcione, sino que sea mantenible y fácil de escalar.",
-        "Más allá del código, valoro la disciplina, la mejora continua y el aprendizaje constante. Me implico en cada proyecto con mentalidad de producto, buscando siempre aportar soluciones útiles y bien pensadas."
+        "Expert in frontend web development with React, Next.js, and state management with Redux.",
+        "Extensive backend experience with Java, Springboot, and RESTful microservices.",
+        "Specialized in the banking sector, ensuring security, accessibility, and performance."
       ]
     }
   },
@@ -109,92 +108,78 @@
     },
     {
       "network": "Twitter",
-      "username": "@tu_usuario",
-      "url": "#",
+      "username": "josearroyodev",
+      "url": "https://twitter.com/josearroyodev",
       "icon": "twitter"
     }
   ],
   "experiences": [
     {
       "isActive": true,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Enero 2025 - Actualidad",
+      "title": "Senior Frontend Developer",
+      "subtitle": "Inveert Smart Planning",
+      "content": "Diseño y desarrollo de aplicaciones con React y Next.js. Implementación de interfaces con Material UI y gestión de CI/CD en Azure DevOps."
     },
     {
       "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Enero 2024 - Julio 2024",
+      "title": "Senior Fullstack Developer",
+      "subtitle": "Quickin Investing",
+      "content": "Desarrollo integral con React y Springboot. Implementación de APIs REST, seguridad con JWT y gestión de despliegues con Jenkins."
     },
     {
       "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Junio 2020 - Septiembre 2022",
+      "title": "Fullstack Developer",
+      "subtitle": "Nexum AG - Valencia",
+      "content": "Desarrollo de aplicación bancaria escalable usando React y Java/Springboot. Integración de APIs externas y manejo de Redux."
     },
     {
       "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Octubre 2019 - Junio 2020",
+      "title": "Frontend Developer",
+      "subtitle": "Oramon - Valencia",
+      "content": "Desarrollo y mantenimiento de aplicaciones React con maquetación Sass/BEM y despliegues automáticos con Jenkins."
+    },
+    {
+      "isActive": false,
+      "dates": "Marzo 2017 - Septiembre 2019",
+      "title": "Java Developer",
+      "subtitle": "REWE System GmBH - Colonia (Alemania)",
+      "content": "Desarrollo backend con Java y Spring. Gestión de bases de datos SQL y testing unitario con JUnit y Mockito."
+    },
+    {
+      "isActive": false,
+      "dates": "Septiembre 2012 - Marzo 2017",
+      "title": "Junior Java Developer",
+      "subtitle": "Deportes Ruiz & Martín - Pizarra",
+      "content": "Diseño de APIs RESTful con Spring MVC, persistencia con Hibernate y seguridad de servicios con JWT."
     }
   ],
   "education": [
     {
       "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect AAA",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Junio 2017",
+      "title": "CFGS Desarrollo de aplicaciones web",
+      "subtitle": "I.E.S. Campanillas - Málaga",
+      "content": "Formación técnica superior enfocada en el desarrollo de software y tecnologías web modernas."
     },
     {
       "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
-    },
-    {
-      "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
-    },
-    {
-      "isActive": false,
-      "dates": "2021 - 2022",
-      "title": "Senior Software Architect",
-      "subtitle": "CloudScale Systems",
-      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+      "dates": "Junio 2012",
+      "title": "CFGS Desarrollo de aplicaciones informáticas",
+      "subtitle": "I.E.S. San José - Málaga",
+      "content": "Estudios superiores en fundamentos de programación, bases de datos y desarrollo de sistemas."
     }
   ],
   "projects": [
     {
-      "technologies": ["Next.js", "PostgreSQL", "Redis"],
-      "title": "Distributed Analytics Engine",
-      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
-      "demo": "#",
-      "code": "#"
-    },
-    {
-      "technologies": ["Next.js", "PostgreSQL", "Redis"],
-      "title": "Distributed Analytics Engine",
-      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
-      "demo": "#",
-      "code": "#"
-    },
-    {
-      "technologies": ["Next.js", "PostgreSQL", "Redis"],
-      "title": "Distributed Analytics Engine",
-      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
-      "demo": "#",
-      "code": "#"
+      "technologies": ["React", "Next.js", "Azure DevOps", "Jest"],
+      "title": "Inveert Smart Planning Platform",
+      "details": "Optimización y desarrollo de interfaces financieras de alta fidelidad con enfoque en accesibilidad y rendimiento.",
+      "demo": "https://github.com/josearroyodev",
+      "code": "https://github.com/josearroyodev"
     }
   ]
 }
