@@ -11,7 +11,7 @@ const { id, title, extra, isGroup = false } = Astro.props;
 
 <section
   id={id}
-  class=`${isGroup ? 'group' : ''} mt-32 flex w-full scroll-mt-32 flex-col items-center`
+  class=`${isGroup ? 'group/title' : ''} mt-32 flex w-full scroll-mt-32 flex-col items-center`
 >
   {
     title && (
