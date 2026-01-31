@@ -12,6 +12,7 @@ import {
   basics,
   config,
   education,
+  errors,
   experiences,
   projects,
   social,
@@ -42,7 +43,11 @@ const currentLang = 'en';
     <Stack slot="content" lang={currentLang} title={stack.title} />
   </Section>
   <Section id="projects" title="My best projects" extra="02/05">
-    <ProjectsContainer slot="content" projects={projects} />
+    <ProjectsContainer
+      slot="content"
+      projects={projects}
+      projectsError={errors.noProjects[currentLang]}
+    />
   </Section>
   <div class="flex w-full max-w-5xl flex-col gap-10 md:flex-row md:gap-60">
     <ExperienceSection experiences={experiences} />

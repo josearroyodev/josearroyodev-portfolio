@@ -181,5 +181,11 @@
       "demo": "https://github.com/josearroyodev",
       "code": "https://github.com/josearroyodev"
     }
-  ]
+  ],
+  "errors": {
+    "noProjects": {
+      "es": "No se han encontrado proyectos",
+      "en": "No se han encontrado proyectos"
+    }
+  }
 }
