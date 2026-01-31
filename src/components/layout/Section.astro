@@ -18,7 +18,7 @@ const { id, title, extra, isGroup = false, classes } = Astro.props;
     title && (
       <header class="mb-12 -ml-2 flex w-full max-w-5xl items-center gap-4">
         <slot name="icon" />
-        <h2 class="text-3xl font-thin">
+        <h2 class="text-3xl font-light dark:font-thin">
           <em>{title}</em>
         </h2>
         {extra && (

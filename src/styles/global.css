@@ -12,6 +12,16 @@ body {
   font-family: 'Onest', sans-serif;
 }
 
+@layer base {
+  .icon-stroke {
+    stroke-width: 2;
+  }
+  
+  .dark .icon-stroke {
+    stroke-width: 1;
+  }
+}
+
 @layer utilities {
   @keyframes fadeIn {
     from {
