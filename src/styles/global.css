@@ -70,26 +70,14 @@ body {
 
   .grid-bg {
     background-size: 40px 40px;
-    background-image: radial-gradient(
-      circle,
-      #e5e7eb 1.5px,
-      transparent 1.5px
-    );
+    background-image: radial-gradient(circle, #e5e7eb 1.5px, transparent 1.5px);
   }
 
   .dark .grid-bg {
     background-size: 50px 50px;
     background-image:
-      linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px
-      );
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   }
 
   .story-script-font {
@@ -125,7 +113,7 @@ body {
   }
 
   .projectCard:hover {
-    box-shadow: 
+    box-shadow:
       0 0 40px rgba(0, 191, 255, 0.15),
       0 0 80px rgba(0, 191, 255, 0.08),
       0 20px 60px rgba(0, 0, 0, 0.4);
@@ -136,7 +124,7 @@ body {
       transform: perspective(800px) rotateY(15deg) rotateX(5deg);
       transition: transform 0.3s ease;
     }
-  
+
     .imageCard:hover {
       transform: perspective(800px) rotateY(0) rotateX(0);
     }

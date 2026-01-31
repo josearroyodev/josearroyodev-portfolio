@@ -1,7 +1,15 @@
 ---
-import CTAs from './CTAs.astro';
+import CTA from './CTA.astro';
+import CTAIcon from './CTAIcon.astro';
 
-const { lang, avatar, jobStatus, role, headline } = Astro.props;
+const { lang, avatar, jobStatus, role, headline, ctas } = Astro.props;
+
+type ActionButton = {
+  label: string;
+  icon: string;
+  href: string;
+  type: string;
+};
 ---
 
 <article class="mt-6 flex max-w-5xl flex-col items-center text-center lg:mt-12">
@@ -68,6 +76,17 @@ const { lang, avatar, jobStatus, role, headline } = Astro.props;
   </p>
 
   <div class="flex flex-wrap items-center justify-center gap-5">
-    <CTAs />
+    {
+      ctas.map((cta: ActionButton) => (
+        <CTA
+          href={cta.href}
+          label={cta.label}
+          classNameList="animate-left-fade slide-delay-200"
+          type={cta.type}
+        >
+          <CTAIcon icon={cta.icon} />
+        </CTA>
+      ))
+    }
   </div>
 </article>
