@@ -1,0 +1,21 @@
+---
+import CTAButton from './CTAButton.astro';
+import CTAIcon from './CTAIcon.astro';
+import CTALink from './CTALink.astro';
+---
+
+<CTAButton label="Let's talk" classNameList="animate-left-fade slide-delay-200">
+  <CTAIcon icon="sendmail" />
+</CTAButton>
+
+<CTALink href="#" label="Connect" classNameList="animate-left-fade">
+  <CTAIcon icon="connect" />
+</CTALink>
+
+<CTALink
+  href="#"
+  label="Download CV"
+  classNameList="animate-right-fade slide-delay-200"
+>
+  <CTAIcon icon="downloadCV" />
+</CTALink>

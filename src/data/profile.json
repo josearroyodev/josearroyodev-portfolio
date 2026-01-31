@@ -1,12 +1,185 @@
 {
-  "name": "Jose Arroyo",
-  "title": "Senior Full-Stack Web Developer",
-  "email": "jose@josearroyo.dev",
-  "phone": "+34 657 67 35 82",
-  "bio": "",
-  "social": {
-    "github": "",
-    "linkedin": "",
-    "twitter": ""
-  }
+  "basics": {
+    "pageTitle": "JoseArroyoDev - Portfolio",
+    "brandName": "JoseArroyo.dev",
+    "name": "Jose",
+    "surname": "Arroyo",
+    "avatar": "images/avatar.webp",
+    "jobStatus": {
+      "state": "open",
+      "label": {
+        "es": "Disponible para trabajar",
+        "en": "Open to work"
+      }
+    },
+    "role": {
+      "es": {
+        "title": "Senior Full-Stack",
+        "subtitlePrefix": "Desarrollador Web y",
+        "subtitleHighlight": "Product Builder"
+      },
+      "en": {
+        "title": "Senior Full-Stack",
+        "subtitlePrefix": "Web Developer &",
+        "subtitleHighlight": "Product Builder"
+      }
+    },
+    "headline": {
+      "es": "Desarrollador Full Stack con más de 10 años de experiencia, especializado en React y Java.",
+      "en": "Full Stack Developer with over 10 years of experience, specializing in React and Java."
+    },
+    "ctas": [
+      {
+        "label": "Let’s talk",
+        "icon": "sendMail",
+        "url": "mailto:josearroyoescudero@gmail.com"
+      }
+    ],
+    "summary": {
+      "es": [
+        "Experto en desarrollo web frontend con React, Next.js y manejo de estados con Redux.",
+        "Amplia experiencia en backend con Java, Springboot y microservicios RESTful.",
+        "Especializado en el sector bancario, garantizando seguridad, accesibilidad y rendimiento."
+      ],
+      "en": [
+        "Expert in frontend web development with React, Next.js, and state management with Redux.",
+        "Extensive backend experience with Java, Springboot, and RESTful microservices.",
+        "Specialized in the banking sector, ensuring security, accessibility, and performance."
+      ]
+    }
+  },
+  "stack": {
+    "title": {
+      "es": "Mi Stack Favorito",
+      "en": "My Favourite Stack"
+    }
+  },
+  "config": {
+    "navBar": [
+      {
+        "id": "stack",
+        "label": {
+          "es": "Tecnologías",
+          "en": "Stack"
+        },
+        "path": "#stack"
+      },
+      {
+        "id": "projects",
+        "label": {
+          "es": "Proyectos",
+          "en": "Projects"
+        },
+        "path": "#projects"
+      },
+      {
+        "id": "experience",
+        "label": {
+          "es": "Experiencia",
+          "en": "Experience"
+        },
+        "path": "#experience"
+      },
+      {
+        "id": "about",
+        "label": {
+          "es": "Sobre mí",
+          "en": "About Me"
+        },
+        "path": "#about"
+      }
+    ],
+    "theme": {
+      "defaultMode": "dark"
+    }
+  },
+  "social": [
+    {
+      "network": "GitHub",
+      "username": "josearroyodev",
+      "url": "https://github.com/josearroyodev",
+      "icon": "github"
+    },
+    {
+      "network": "LinkedIn",
+      "username": "josearroyoescudero",
+      "url": "https://www.linkedin.com/in/josearroyoescudero/",
+      "icon": "linkedin"
+    },
+    {
+      "network": "Twitter",
+      "username": "josearroyodev",
+      "url": "https://twitter.com/josearroyodev",
+      "icon": "twitter"
+    }
+  ],
+  "experiences": [
+    {
+      "isActive": true,
+      "dates": "Enero 2025 - Actualidad",
+      "title": "Senior Frontend Developer",
+      "subtitle": "Inveert Smart Planning",
+      "content": "Diseño y desarrollo de aplicaciones con React y Next.js. Implementación de interfaces con Material UI y gestión de CI/CD en Azure DevOps."
+    },
+    {
+      "isActive": false,
+      "dates": "Enero 2024 - Julio 2024",
+      "title": "Senior Fullstack Developer",
+      "subtitle": "Quickin Investing",
+      "content": "Desarrollo integral con React y Springboot. Implementación de APIs REST, seguridad con JWT y gestión de despliegues con Jenkins."
+    },
+    {
+      "isActive": false,
+      "dates": "Junio 2020 - Septiembre 2022",
+      "title": "Fullstack Developer",
+      "subtitle": "Nexum AG - Valencia",
+      "content": "Desarrollo de aplicación bancaria escalable usando React y Java/Springboot. Integración de APIs externas y manejo de Redux."
+    },
+    {
+      "isActive": false,
+      "dates": "Octubre 2019 - Junio 2020",
+      "title": "Frontend Developer",
+      "subtitle": "Oramon - Valencia",
+      "content": "Desarrollo y mantenimiento de aplicaciones React con maquetación Sass/BEM y despliegues automáticos con Jenkins."
+    },
+    {
+      "isActive": false,
+      "dates": "Marzo 2017 - Septiembre 2019",
+      "title": "Java Developer",
+      "subtitle": "REWE System GmBH - Colonia (Alemania)",
+      "content": "Desarrollo backend con Java y Spring. Gestión de bases de datos SQL y testing unitario con JUnit y Mockito."
+    },
+    {
+      "isActive": false,
+      "dates": "Septiembre 2012 - Marzo 2017",
+      "title": "Junior Java Developer",
+      "subtitle": "Deportes Ruiz & Martín - Pizarra",
+      "content": "Diseño de APIs RESTful con Spring MVC, persistencia con Hibernate y seguridad de servicios con JWT."
+    }
+  ],
+  "education": [
+    {
+      "isActive": false,
+      "dates": "Junio 2017",
+      "title": "CFGS Desarrollo de aplicaciones web",
+      "subtitle": "I.E.S. Campanillas - Málaga",
+      "content": "Formación técnica superior enfocada en el desarrollo de software y tecnologías web modernas."
+    },
+    {
+      "isActive": false,
+      "dates": "Junio 2012",
+      "title": "CFGS Desarrollo de aplicaciones informáticas",
+      "subtitle": "I.E.S. San José - Málaga",
+      "content": "Estudios superiores en fundamentos de programación, bases de datos y desarrollo de sistemas."
+    }
+  ],
+  "projects": [
+    {
+      "technologies": ["React", "Next.js", "Azure DevOps", "Jest"],
+      "title": "Inveert Smart Planning Platform",
+      "details": "Optimización y desarrollo de interfaces financieras de alta fidelidad con enfoque en accesibilidad y rendimiento.",
+      "demo": "https://github.com/josearroyodev",
+      "code": "https://github.com/josearroyodev"
+    }
+  ]
 }

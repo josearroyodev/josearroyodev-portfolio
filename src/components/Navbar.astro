@@ -1,23 +1,36 @@
+---
+const { brandName, navBar } = Astro.props;
+
+type NavItem = {
+  id: string;
+  label: {
+    es: string;
+    en: string;
+  };
+  path: string;
+};
+---
+
 <nav class="fixed top-6 left-1/2 z-50 w-[90%] max-w-5xl -translate-x-1/2">
   <div
     class="flex items-center justify-between rounded-full border border-white/5 bg-zinc-900/80 px-8 py-4 text-white shadow-2xl backdrop-blur-md dark:rounded-2xl"
   >
-    <a
-      class="text-md flex items-center font-mono font-bold tracking-tighter text-white"
-      href="#"
+    <button
+      id="logo-button"
+      class="text-md flex cursor-pointer items-center font-mono font-bold tracking-tighter text-white"
     >
-      &lt; JoseArroyo.dev /&gt;
-    </a>
+      &lt; {brandName} /&gt;
+    </button>
     <div
       class="hidden items-center gap-2 text-[10px] font-bold tracking-[0.2em] text-zinc-500 uppercase md:flex lg:gap-6"
     >
-      <a class="transition-colors hover:text-white" href="#stack">Stack</a>
-      <a class="transition-colors hover:text-white" href="#projects">Projects</a
-      >
-      <a class="transition-colors hover:text-white" href="#experience"
-        >Experience & Education</a
-      >
-      <a class="transition-colors hover:text-white" href="#about">About me</a>
+      {
+        navBar.map((item: NavItem) => (
+          <a class="transition-colors hover:text-white" href={item.path}>
+            {item.label['en']}
+          </a>
+        ))
+      }
     </div>
     <div class="flex items-center gap-4 transition-all duration-1000">
       <button

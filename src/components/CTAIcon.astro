@@ -1,0 +1,26 @@
+---
+import { Icons } from './Icons';
+
+const { icon } = Astro.props;
+---
+
+{
+  icon === 'sendmail' && (
+    <Icons.SendMail className="icon icon-tabler icons-tabler-outline icon-tabler-mail-share" />
+  )
+}
+
+{
+  icon === 'connect' && (
+    <Icons.LinkedInOutline
+      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+      stroke="2"
+    />
+  )
+}
+
+{
+  icon === 'downloadCV' && (
+    <Icons.DownloadCV className="icon icon-tabler icons-tabler-outline icon-tabler-file-download" />
+  )
+}
