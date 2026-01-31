@@ -23,7 +23,7 @@ const { active = false, dates, title, subtitle, content } = Astro.props;
                 <div class="bg-accent-cyan h-3 w-3 animate-pulse rounded-full" />
               </div>
             ) : (
-              <div class="bg-background-light dark:bg-background-dark absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border dark:border-2 dark:border-zinc-800" />
+              <div class="bg-background-light dark:bg-background-dark group-hover:border-accent-cyan group-hover:text-accent-cyan absolute top-1 left-0 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-2 dark:border-zinc-800" />
             )
           }
 
