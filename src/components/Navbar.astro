@@ -22,11 +22,14 @@ type NavItem = {
       &lt; {brandName} /&gt;
     </button>
     <div
-      class="hidden items-center gap-2 text-[10px] font-bold tracking-[0.2em] text-zinc-500 uppercase md:flex lg:gap-6"
+      class="hidden items-center gap-2 text-[10px] font-bold tracking-[0.2em] text-white uppercase md:flex lg:gap-6 dark:text-zinc-500"
     >
       {
         navBar.map((item: NavItem) => (
-          <a class="transition-colors hover:text-white" href={item.path}>
+          <a
+            class="hover:text-accent-cyan transition-colors dark:hover:text-white"
+            href={item.path}
+          >
             {item.label['en']}
           </a>
         ))
