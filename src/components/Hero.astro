@@ -81,7 +81,11 @@ type ActionButton = {
         <CTA
           href={cta.href}
           label={cta.label}
-          classNameList="animate-left-fade slide-delay-200"
+          classNameList={[
+            cta.label !== 'Download CV'
+              ? 'animate-left-fade slide-delay-200'
+              : 'animate-right-fade slide-delay-200',
+          ]}
           type={cta.type}
         >
           <CTAIcon icon={cta.icon} />
