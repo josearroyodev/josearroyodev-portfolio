@@ -32,6 +32,8 @@ const { projectDetails } = Astro.props;
           <a
             class="flex items-center justify-center gap-2 rounded-xl bg-white py-3 text-xs font-bold text-black transition-all hover:bg-zinc-200"
             href={projectDetails.demo}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span class="material-symbols-outlined text-sm">visibility</span>{' '}
             Live Demo
@@ -43,6 +45,8 @@ const { projectDetails } = Astro.props;
           <a
             class="flex items-center justify-center gap-2 rounded-xl border border-zinc-800 py-3 text-xs font-bold text-white transition-all hover:bg-zinc-800"
             href={projectDetails.code}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span class="material-symbols-outlined text-sm">code</span> Source
             Code
