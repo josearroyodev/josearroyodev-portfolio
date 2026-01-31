@@ -1,0 +1,32 @@
+---
+import { Icons } from './Icons';
+import Section from './layout/Section.astro';
+import Timeline from './layout/Timeline.astro';
+
+type Education = {
+  isActive: boolean;
+  dates: string;
+  title: string;
+  subtitle: string;
+  content: string;
+};
+
+const { education } = Astro.props;
+---
+
+<Section id="education" title="My education" isGroup>
+  <Icons.Education slot="icon" />
+  <article class="flex-1" slot="content">
+    {
+      education.map((study: Education) => (
+        <Timeline
+          active={study.isActive}
+          dates={study.dates}
+          title={study.title}
+          subtitle={study.subtitle}
+          content={study.content}
+        />
+      ))
+    }
+  </article>
+</Section>

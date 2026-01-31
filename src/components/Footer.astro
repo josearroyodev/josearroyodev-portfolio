@@ -1,14 +1,16 @@
 ---
-import { Icons } from '@components/Icons';
+import SocialIcon from './SocialIcon.astro';
 
 const currentYear = new Date().getFullYear();
 
-const { alias, social } = Astro.props;
-
 type SocialItem = {
-  platform: string;
+  network: string;
+  username: string;
   url: string;
+  icon: string;
 };
+
+const { brandName, social } = Astro.props;
 ---
 
 <footer
@@ -40,7 +42,7 @@ type SocialItem = {
           href="#"
           class="hover:text-accent-cyan font-semibold transition-colors duration-300"
         >
-          {alias}
+          {brandName}
         </a>
         &copy; {currentYear}
       </p>
@@ -52,37 +54,11 @@ type SocialItem = {
         social.map((item: SocialItem) => (
           <a
             href={item.url}
-            class="group text-salte-400 dark:text-zinc-400"
+            class="group text-salte-400 cursor-pointer dark:text-zinc-400"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {() => {
-              switch (item.platform) {
-                case 'GitHub':
-                  return (
-                    <>
-                      <Icons.GithubOutline className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github group-hover:hidden" />
-                      <Icons.GithubFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-github hidden group-hover:block" />
-                    </>
-                  );
-                case 'LinkedIn':
-                  return (
-                    <>
-                      <Icons.LinkedInOutline className="icon icon-tabler icon-tabler-outline icon-tabler-brand-linkedin group-hover:hidden" />
-                      <Icons.LinkedInFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-linkedin hidden group-hover:block" />
-                    </>
-                  );
-                case 'Twitter':
-                  return (
-                    <>
-                      <Icons.TwitterOutline className="icon icon-tabler icon-tabler-outline icon-tabler-brand-x group-hover:hidden" />
-                      <Icons.TwitterFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-x hidden group-hover:block" />
-                    </>
-                  );
-                default:
-                  return null;
-              }
-            }}
+            <SocialIcon icon={item.icon} />
           </a>
         ))
       }

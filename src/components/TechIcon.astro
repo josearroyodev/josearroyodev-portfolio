@@ -10,7 +10,7 @@ const { name, hoverColor } = Astro.props;
 <div class="group flex flex-1 flex-col items-center gap-1 text-slate-100">
   <slot />
   <span
-    class=`text-sm font-thin transition-all duration-200  group-hover:text-[${hoverColor}]`
+    class=`text-sm font-thin transition-all duration-200 group-hover:text-[${hoverColor}] group-hover:font-bold`
   >
     {name}
   </span>

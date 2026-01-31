@@ -1,20 +1,200 @@
 {
-  "brandName": "JoseArroyo.dev",
-  "alias": "Jose Arroyo Dev",
-  "navBar": {
-    "links": [
-      { "label": "stack", "path": "#stack" },
-      { "label": "projects", "path": "#projects" },
-      { "label": "experience & education", "path": "#experience" },
-      { "label": "about", "path": "#about" }
-    ]
+  "basics": {
+    "pageTitle": "JoseArroyoDev - Portfolio",
+    "brandName": "JoseArroyo.dev",
+    "name": "Jose",
+    "surname": "Arroyo",
+    "avatar": "images/avatar.webp",
+    "jobStatus": {
+      "state": "open",
+      "label": {
+        "es": "Disponible para trabajar",
+        "en": "Open to work"
+      }
+    },
+    "role": {
+      "es": {
+        "title": "Senior Full-Stack",
+        "subtitlePrefix": "Desarrollador Web y",
+        "subtitleHighlight": "Product Builder"
+      },
+      "en": {
+        "title": "Senior Full-Stack",
+        "subtitlePrefix": "Web Developer &",
+        "subtitleHighlight": "Product Builder"
+      }
+    },
+    "label": ["Senior Full-Stack", "Web Developer", "Product Builder"],
+    "headline": {
+      "es": "Aquí iría tu bio corta para el SEO o el Hero section.",
+      "en": "Specializing in high-performance distributed systems, scalable cloud infrastructure, and enterprise-grade architecture."
+    },
+    "ctas": [
+      {
+        "label": "Let’s talk",
+        "icon": "sendMail",
+        "url": ""
+      }
+    ],
+    "summary": {
+      "es": [
+        "Soy desarrollador web enfocado en crear aplicaciones claras, eficientes y centradas en el usuario. Me gusta construir productos digitales con código limpio, buen diseño y una experiencia de uso sencilla, donde cada detalle tenga sentido.",
+        "Trabajo principalmente con tecnologías modernas del ecosistema web y disfruto enfrentándome a problemas reales: desde estructurar una interfaz hasta optimizar la lógica que hay detrás. Me interesa especialmente que lo que desarrollo no solo funcione, sino que sea mantenible y fácil de escalar.",
+        "Más allá del código, valoro la disciplina, la mejora continua y el aprendizaje constante. Me implico en cada proyecto con mentalidad de producto, buscando siempre aportar soluciones útiles y bien pensadas."
+      ],
+      "en": [
+        "Soy desarrollador web enfocado en crear aplicaciones claras, eficientes y centradas en el usuario. Me gusta construir productos digitales con código limpio, buen diseño y una experiencia de uso sencilla, donde cada detalle tenga sentido.",
+        "Trabajo principalmente con tecnologías modernas del ecosistema web y disfruto enfrentándome a problemas reales: desde estructurar una interfaz hasta optimizar la lógica que hay detrás. Me interesa especialmente que lo que desarrollo no solo funcione, sino que sea mantenible y fácil de escalar.",
+        "Más allá del código, valoro la disciplina, la mejora continua y el aprendizaje constante. Me implico en cada proyecto con mentalidad de producto, buscando siempre aportar soluciones útiles y bien pensadas."
+      ]
+    }
+  },
+  "stack": {
+    "title": {
+      "es": "Mi Stack Favorito",
+      "en": "My Favourite Stack"
+    }
+  },
+  "config": {
+    "navBar": [
+      {
+        "id": "stack",
+        "label": {
+          "es": "Tecnologías",
+          "en": "Stack"
+        },
+        "path": "#stack"
+      },
+      {
+        "id": "projects",
+        "label": {
+          "es": "Proyectos",
+          "en": "Projects"
+        },
+        "path": "#projects"
+      },
+      {
+        "id": "experience",
+        "label": {
+          "es": "Experiencia",
+          "en": "Experience"
+        },
+        "path": "#experience"
+      },
+      {
+        "id": "about",
+        "label": {
+          "es": "Sobre mí",
+          "en": "About Me"
+        },
+        "path": "#about"
+      }
+    ],
+    "theme": {
+      "defaultMode": "dark"
+    }
   },
   "social": [
-    { "platform": "GitHub", "url": "https://github.com/josearroyodev" },
     {
-      "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/josearroyoescudero/"
+      "network": "GitHub",
+      "username": "josearroyodev",
+      "url": "https://github.com/josearroyodev",
+      "icon": "github"
     },
-    { "platform": "Twitter", "url": "#" }
+    {
+      "network": "LinkedIn",
+      "username": "josearroyoescudero",
+      "url": "https://www.linkedin.com/in/josearroyoescudero/",
+      "icon": "linkedin"
+    },
+    {
+      "network": "Twitter",
+      "username": "@tu_usuario",
+      "url": "#",
+      "icon": "twitter"
+    }
+  ],
+  "experiences": [
+    {
+      "isActive": true,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    }
+  ],
+  "education": [
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect AAA",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    },
+    {
+      "isActive": false,
+      "dates": "2021 - 2022",
+      "title": "Senior Software Architect",
+      "subtitle": "CloudScale Systems",
+      "content": "Modernizing legacy monoliths into high-availability microservices using Go and Kubernetes. Orchestrating global cloud transitions."
+    }
+  ],
+  "projects": [
+    {
+      "technologies": ["Next.js", "PostgreSQL", "Redis"],
+      "title": "Distributed Analytics Engine",
+      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
+      "demo": "#",
+      "code": "#"
+    },
+    {
+      "technologies": ["Next.js", "PostgreSQL", "Redis"],
+      "title": "Distributed Analytics Engine",
+      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
+      "demo": "#",
+      "code": "#"
+    },
+    {
+      "technologies": ["Next.js", "PostgreSQL", "Redis"],
+      "title": "Distributed Analytics Engine",
+      "details": "High-throughput data visualization platform processing 10k+ events/sec with sub-second latency.",
+      "demo": "#",
+      "code": "#"
+    }
   ]
 }

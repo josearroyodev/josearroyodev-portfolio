@@ -1,9 +1,13 @@
 ---
-const { brandName, links } = Astro.props;
+const { brandName, navBar } = Astro.props;
 
 type NavItem = {
+  id: string;
+  label: {
+    es: string;
+    en: string;
+  };
   path: string;
-  label: string;
 };
 ---
 
@@ -21,9 +25,9 @@ type NavItem = {
       class="hidden items-center gap-2 text-[10px] font-bold tracking-[0.2em] text-zinc-500 uppercase md:flex lg:gap-6"
     >
       {
-        links.map((link: NavItem) => (
-          <a class="transition-colors hover:text-white" href={link.path}>
-            {link.label}
+        navBar.map((item: NavItem) => (
+          <a class="transition-colors hover:text-white" href={item.path}>
+            {item.label['en']}
           </a>
         ))
       }

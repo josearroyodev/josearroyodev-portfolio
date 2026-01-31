@@ -1,0 +1,89 @@
+---
+import { Icons } from '@components/Icons';
+
+interface Props {
+  icon: string;
+  hoverColor: string;
+}
+
+const { icon, hoverColor } = Astro.props;
+
+const className = `icon icon-tabler icons-tabler-outline icon-tabler-database transition-all 
+  duration-300 group-hover:text-[var(--icon-hover)]`;
+
+const dynamicStyle = {
+  '--icon-hover': hoverColor,
+};
+---
+
+{
+  icon === 'nextjs' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.NextJS className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'astro' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.Astro className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'react' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.React className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'typeScript' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.TypeScript className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'nodejs' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.NodeJS className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'pnpm' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.Pnpm className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'postgreSQL' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.PostgreSQL className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'docker' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.Docker className={className} />
+    </span>
+  )
+}
+
+{
+  icon === 'javascript' && (
+    <span class={className} style={dynamicStyle}>
+      <Icons.JavaScript className={className} />
+    </span>
+  )
+}

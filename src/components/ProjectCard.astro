@@ -1,3 +1,7 @@
+---
+const { projectDetails } = Astro.props;
+---
+
 <div
   class="projectCard mb-6 max-w-100 overflow-hidden rounded-4xl bg-zinc-900 transition-all duration-300 hover:scale-[102%]"
 >
@@ -10,30 +14,41 @@
   </div>
   <div class="p-8">
     <div class="mb-6 flex flex-wrap gap-2">
-      <span class="tech-tag">[Next.js]</span>
-      <span class="tech-tag">[PostgreSQL]</span>
-      <span class="tech-tag">[Redis]</span>
+      {
+        projectDetails.technologies.map((techlonogy: string) => (
+          <span class="tech-tag">[{techlonogy}]</span>
+        ))
+      }
     </div>
     <h3 class="mb-3 text-2xl font-bold text-white">
-      Distributed Analytics Engine
+      {projectDetails.title}
     </h3>
     <p class="mb-8 text-sm leading-relaxed text-zinc-500">
-      High-throughput data visualization platform processing 10k+ events/sec
-      with sub-second latency.
+      {projectDetails.details}
     </p>
     <div class="grid grid-cols-2 gap-4">
-      <a
-        class="flex items-center justify-center gap-2 rounded-xl bg-white py-3 text-xs font-bold text-black transition-all hover:bg-zinc-200"
-        href="#"
-      >
-        <span class="material-symbols-outlined text-sm">visibility</span> Live Demo
-      </a>
-      <a
-        class="flex items-center justify-center gap-2 rounded-xl border border-zinc-800 py-3 text-xs font-bold text-white transition-all hover:bg-zinc-800"
-        href="#"
-      >
-        <span class="material-symbols-outlined text-sm">code</span> Source Code
-      </a>
+      {
+        projectDetails.demo && (
+          <a
+            class="flex items-center justify-center gap-2 rounded-xl bg-white py-3 text-xs font-bold text-black transition-all hover:bg-zinc-200"
+            href={projectDetails.demo}
+          >
+            <span class="material-symbols-outlined text-sm">visibility</span>{' '}
+            Live Demo
+          </a>
+        )
+      }
+      {
+        projectDetails.code && (
+          <a
+            class="flex items-center justify-center gap-2 rounded-xl border border-zinc-800 py-3 text-xs font-bold text-white transition-all hover:bg-zinc-800"
+            href={projectDetails.code}
+          >
+            <span class="material-symbols-outlined text-sm">code</span> Source
+            Code
+          </a>
+        )
+      }
     </div>
   </div>
 </div>

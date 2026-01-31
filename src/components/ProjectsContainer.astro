@@ -1,9 +1,17 @@
 ---
 import ProjectCard from './ProjectCard.astro';
+
+type Project = {
+  technologies: string[];
+  title: string;
+  details: string;
+  demo?: string;
+  code?: string;
+};
+
+const { projects } = Astro.props;
 ---
 
 <div class="flex w-full flex-wrap justify-center gap-10">
-  <ProjectCard />
-  <ProjectCard />
-  <ProjectCard />
+  {projects.map((project: Project) => <ProjectCard projectDetails={project} />)}
 </div>
