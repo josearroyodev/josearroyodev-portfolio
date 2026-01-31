@@ -7,10 +7,13 @@ interface Props {
 const { name, hoverColor } = Astro.props;
 ---
 
-<div class="group flex flex-1 flex-col items-center gap-1 text-slate-100">
+<div
+  class="group flex flex-1 flex-col items-center gap-1 text-slate-100"
+  style={`--hover-custom: ${hoverColor};`}
+>
   <slot />
   <span
-    class=`text-sm font-thin transition-all duration-200 group-hover:text-[${hoverColor}] group-hover:font-bold`
+    class="text-sm font-thin transition-all duration-200 group-hover:font-bold group-hover:text-(--hover-custom)"
   >
     {name}
   </span>
