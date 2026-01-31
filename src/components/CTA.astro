@@ -3,7 +3,7 @@ const { href, label, classNameList, type } = Astro.props;
 
 const classList =
   type === 'link'
-    ? 'flex min-w-38 cursor-pointer items-center gap-2 rounded-xl border border-zinc-700 bg-transparent px-10 py-4 font-bold opacity-0 transition-all hover:scale-105 hover:bg-white/5 active:scale-100'
+    ? 'flex min-w-38 cursor-pointer items-center gap-2 rounded-xl border border-zinc-700 bg-transparent px-10 py-4 font-bold opacity-0 transition-all hover:scale-105 hover:bg-white dark:hover:bg-white/5 active:scale-100'
     : 'flex min-w-38 cursor-pointer items-center gap-2 rounded-xl bg-zinc-900 px-10 py-4 font-bold text-slate-100 opacity-0 shadow-lg transition-all hover:scale-105 active:scale-100 dark:bg-zinc-100 dark:text-zinc-900';
 ---
 
