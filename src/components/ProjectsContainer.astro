@@ -9,9 +9,16 @@ type Project = {
   code?: string;
 };
 
-const { projects } = Astro.props;
+const { projects, projectsError = '' } = Astro.props;
 ---
 
 <div class="flex w-full flex-wrap justify-center gap-10">
-  {projects.map((project: Project) => <ProjectCard projectDetails={project} />)}
+  {
+    projects &&
+      projects.map((project: Project) => (
+        <ProjectCard projectDetails={project} />
+      ))
+  }
+
+  {(projects.length === 0 || !projects) && <div>{projectsError ?? ''}</div>}
 </div>
