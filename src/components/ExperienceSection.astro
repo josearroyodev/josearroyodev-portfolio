@@ -16,7 +16,7 @@ const { experiences } = Astro.props;
 
 <Section id="experience" title="My experience" isGroup>
   <Icons.Experience slot="icon" />
-  <article class="flex-1" slot="content">
+  <article class="flex w-full flex-col" slot="content">
     {
       experiences.map((experience: Experience) => (
         <Timeline
