@@ -3,16 +3,16 @@ const { name, surname, paragraphs } = Astro.props;
 ---
 
 <article
-  class="flex w-full max-w-5xl flex-col-reverse gap-28 pr-10 lg:flex-row"
+  class="flex w-full max-w-5xl flex-col-reverse items-center justify-center gap-16 lg:flex-row lg:gap-28 lg:pr-10"
 >
-  <div class="flex flex-1 flex-col gap-8">
+  <div class="flex w-full flex-1 flex-col gap-8">
     <h3 class="flex gap-1.5 text-2xl leading-none font-light">
       {name}
       <span class="text-accent-cyan text-[26px] font-extrabold">{surname}</span>
     </h3>
     {paragraphs.map((p) => <p>{p}</p>)}
   </div>
-  <div class="bg-accent-cyan/30 imageCard rounded-3xl">
+  <div class="bg-accent-cyan/30 imageCard w-fit rounded-3xl">
     <img
       src="images/josearroyodev.webp"
       class="dark:normal rounded-3xl border-4 object-cover shadow-2xl grayscale dark:border-zinc-800 dark:grayscale-0"
