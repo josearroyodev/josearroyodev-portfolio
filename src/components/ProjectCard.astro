@@ -1,0 +1,58 @@
+---
+const { projectDetails } = Astro.props;
+---
+
+<div
+  class="projectCard hover:border-accent-cyan mb-6 max-w-100 overflow-hidden rounded-4xl border-2 border-transparent bg-zinc-900 transition-all hover:scale-[102%]"
+>
+  <div class="aspect-video overflow-hidden bg-zinc-800">
+    <img
+      alt="Enterprise Dashboard"
+      class="h-full w-full object-cover opacity-80 grayscale transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuApztS6bjco9vnV01U-Mf-yXxtRjIhKfcInPJs-BQZ3BFMvxCydT7Xq2Zqumb1FKHbm7s8gTNDUaI4rnYnE4FIFv8rOua2nZ4911yIJtmEPSm5KF-kDQBSPypjNd3CFQC_VVMOBaWukNRLnsvRK0TYV4iEUkDnwFde6z9w28q57o7XM_D1yvRYXtMCdaeHmz6zqdGblIrkM9gi77CE5SYKkxJmpn9mAT6PJ9haKr67jvr3fJLebdZtISOQvgG1_amFJOfvd5V8k741g"
+    />
+  </div>
+  <div class="p-8">
+    <div class="mb-6 flex flex-wrap gap-2 text-zinc-500">
+      {
+        projectDetails.technologies.map((techlonogy: string) => (
+          <span class="tech-tag">[{techlonogy}]</span>
+        ))
+      }
+    </div>
+    <h3 class="mb-3 text-2xl font-bold text-white">
+      {projectDetails.title}
+    </h3>
+    <p class="mb-8 text-sm leading-relaxed text-zinc-500">
+      {projectDetails.details}
+    </p>
+    <div class="grid grid-cols-2 gap-4">
+      {
+        projectDetails.demo && (
+          <a
+            class="flex items-center justify-center gap-2 rounded-xl bg-white py-3 text-xs font-bold text-black transition-all hover:bg-zinc-200"
+            href={projectDetails.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="material-symbols-outlined text-sm">visibility</span>{' '}
+            Live Demo
+          </a>
+        )
+      }
+      {
+        projectDetails.code && (
+          <a
+            class="flex items-center justify-center gap-2 rounded-xl border border-zinc-800 py-3 text-xs font-bold text-white transition-all hover:bg-zinc-800"
+            href={projectDetails.code}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="material-symbols-outlined text-sm">code</span> Source
+            Code
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>

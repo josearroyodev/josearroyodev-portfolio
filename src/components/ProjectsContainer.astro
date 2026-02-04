@@ -1,0 +1,24 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+type Project = {
+  technologies: string[];
+  title: string;
+  details: string;
+  demo?: string;
+  code?: string;
+};
+
+const { projects, projectsError = '' } = Astro.props;
+---
+
+<div class="flex w-full flex-wrap justify-center gap-10">
+  {
+    projects &&
+      projects.map((project: Project) => (
+        <ProjectCard projectDetails={project} />
+      ))
+  }
+
+  {(projects.length === 0 || !projects) && <div>{projectsError ?? ''}</div>}
+</div>

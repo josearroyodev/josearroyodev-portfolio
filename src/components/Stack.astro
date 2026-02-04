@@ -1,0 +1,49 @@
+---
+import StackIcon from './StackIcon.astro';
+import TechIcon from './TechIcon.astro';
+
+const { lang, title } = Astro.props;
+---
+
+<div
+  class="animate-in-bottom-fade w-[95%] max-w-7xl rounded-[2.5rem] border border-white/5 bg-zinc-900 py-16 text-center"
+>
+  <header>
+    <h3
+      class="text-accent-cyan mb-5 font-mono text-sm tracking-[0.4em] uppercase"
+    >
+      {title[lang]}
+    </h3>
+  </header>
+  <article
+    class="mt-8 flex w-full flex-wrap justify-center gap-x-20 gap-y-10 px-16 lg:gap-0"
+  >
+    <TechIcon name="Next.js" hoverColor="#B8B8B8">
+      <StackIcon icon={'nextjs'} hoverColor="#B8B8B8" />
+    </TechIcon>
+    <TechIcon name="Astro" hoverColor="#FF5D02">
+      <StackIcon icon={'astro'} hoverColor="#FF5D02" />
+    </TechIcon>
+    <TechIcon name="React" hoverColor="#61DAFB">
+      <StackIcon icon={'react'} hoverColor="#61DAFB" />
+    </TechIcon>
+    <TechIcon name="TypeScript" hoverColor="#3B82F6">
+      <StackIcon icon={'typeScript'} hoverColor="#3B82F6" />
+    </TechIcon>
+    <TechIcon name="Node.js" hoverColor="#2E7D32">
+      <StackIcon icon={'nodejs'} hoverColor="#2E7D32" />
+    </TechIcon>
+    <TechIcon name="pnpm" hoverColor="#F9AD00">
+      <StackIcon icon={'pnpm'} hoverColor="#F9AD00" />
+    </TechIcon>
+    <TechIcon name="PostgreSQL" hoverColor="#336791">
+      <StackIcon icon={'postgreSQL'} hoverColor="#336791" />
+    </TechIcon>
+    <TechIcon name="Docker" hoverColor="#2496ED">
+      <StackIcon icon={'docker'} hoverColor="#2496ED" />
+    </TechIcon>
+    <TechIcon name="JavaScript" hoverColor="#FFD600">
+      <StackIcon icon={'javascript'} hoverColor="#FFD600" />
+    </TechIcon>
+  </article>
+</div>

@@ -1,0 +1,71 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+
+import About from '@components/About.astro';
+import EducationSection from '@components/EducationSection.astro';
+import ExperienceSection from '@components/ExperienceSection.astro';
+import Hero from '@components/Hero.astro';
+import Section from '@components/layout/Section.astro';
+import ProjectsContainer from '@components/ProjectsContainer.astro';
+import Stack from '@components/Stack.astro';
+import {
+  basics,
+  config,
+  education,
+  errors,
+  experiences,
+  projects,
+  social,
+  stack,
+} from '@data/profile.json';
+
+const currentLang = 'en';
+---
+
+<DefaultLayout
+  pageTitle={basics.pageTitle}
+  lang={currentLang}
+  basics={basics}
+  config={config}
+  social={social}
+>
+  <Section id="hero">
+    <Hero
+      slot="content"
+      lang={currentLang}
+      avatar={basics.avatar}
+      jobStatus={basics.jobStatus}
+      role={basics.role}
+      headline={basics.headline}
+      ctas={basics.ctas}
+    />
+  </Section>
+  <Section id="stack">
+    <Stack slot="content" lang={currentLang} title={stack.title} />
+  </Section>
+
+  {
+    projects && projects.length > 0 && (
+      <Section id="projects" title="My best projects" extra="02/05">
+        <ProjectsContainer
+          slot="content"
+          projects={projects}
+          projectsError={errors.noProjects[currentLang]}
+        />
+      </Section>
+    )
+  }
+
+  <div class="flex w-full max-w-5xl flex-col gap-10 md:flex-row md:gap-60">
+    <ExperienceSection experiences={experiences} />
+    <EducationSection education={education} />
+  </div>
+  <Section id="about" title="About me" extra=" ">
+    <About
+      slot="content"
+      name={basics.name}
+      surname={basics.surname}
+      paragraphs={basics.summary[currentLang]}
+    />
+  </Section>
+</DefaultLayout>

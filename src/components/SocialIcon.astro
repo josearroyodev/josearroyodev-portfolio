@@ -1,0 +1,36 @@
+---
+import { Icons } from './Icons';
+
+interface Props {
+  icon: string;
+}
+
+const { icon } = Astro.props;
+---
+
+{
+  icon === 'github' && (
+    <>
+      <Icons.GithubOutline className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github group-hover:hidden" />
+      <Icons.GithubFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-github hidden group-hover:block" />
+    </>
+  )
+}
+
+{
+  icon === 'linkedin' && (
+    <>
+      <Icons.LinkedInOutline className="icon icon-tabler icon-tabler-outline icon-tabler-brand-linkedin group-hover:hidden" />
+      <Icons.LinkedInFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-linkedin hidden group-hover:block" />
+    </>
+  )
+}
+
+{
+  icon === 'twitter' && (
+    <>
+      <Icons.TwitterOutline className="icon icon-tabler icon-tabler-outline icon-tabler-brand-x group-hover:hidden" />
+      <Icons.TwitterFilled className="icon icon-tabler icon-tabler-filled icon-tabler-brand-x hidden group-hover:block" />
+    </>
+  )
+}
